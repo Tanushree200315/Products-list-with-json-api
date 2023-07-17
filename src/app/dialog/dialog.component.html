@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+
+<div mat-dialog-content>
+    <form [formGroup]="ProductForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Add New Product">
+    </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Product Category</mat-label>
+          <mat-select formControlName="category" placeholder="Select Category">
+            <mat-option value="Fruits">Fruits</mat-option>
+            <mat-option value="Vegetables">Vegetables</mat-option>
+            <mat-option value="Electronics">Electronics</mat-option>
+          </mat-select>
+         </mat-form-field>
+         <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="Date" matInput [matDatepicker]="picker">
+            
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <label for=""> <h1>Product Quality</h1></label>
+          <mat-radio-group formControlName="Quality" class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let list of QualityList" [value]="list">{{list}}
+            </mat-radio-button>
+          </mat-radio-group>
+          <mat-form-field appearance="fill">
+            <mat-label>Price</mat-label>
+            <input formControlName="Price" matInput type="number" placeholder="Price">
+    </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Comments</mat-label>
+           <textarea formControlName="Comment" matInput ></textarea>
+    </mat-form-field>s
+    </form>
+      
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="primary" (click)="addProduct()" >Save</button>
+
+
+</div>

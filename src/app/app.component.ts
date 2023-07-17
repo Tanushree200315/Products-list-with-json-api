@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { DialogComponent } from './dialog/dialog.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ApiIntegration';
+  
 }

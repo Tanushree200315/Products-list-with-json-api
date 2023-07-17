@@ -1,0 +1,59 @@
+{
+  "productList": [
+    {
+      "productName": "samsung",
+      "category": "Electronics",
+      "Quality": "Second Hand",
+      "Price": 1000,
+      "Comment": "no",
+      "Date": "2023-07-17T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "apple ",
+      "category": "Fruits",
+      "Quality": "Brand New",
+      "Price": 150,
+      "Comment": "An apple a day keeps the doctor away",
+      "Date": "2023-07-18T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "ftty",
+      "category": "Fruits",
+      "Quality": "Brand New",
+      "Price": 343,
+      "Comment": "5hfh",
+      "Date": "2023-07-12T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "banana",
+      "category": "Fruits",
+      "Quality": "Brand New",
+      "Price": 60,
+      "Comment": "fgf",
+      "Date": "2023-07-27T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "dffdsf",
+      "category": "Vegetables",
+      "Quality": "Brand New",
+      "Price": 4423434,
+      "Comment": "fdfdfdfdf",
+      "Date": "2023-07-17T18:30:00.000Z",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
