@@ -1,33 +1,6 @@
 {
   "productList": [
     {
-      "productName": "apple ",
-      "category": "Fruits",
-      "Quality": "Brand New",
-      "Price": 150,
-      "Comment": "An apple a day keeps the doctor away",
-      "Date": "2023-07-18T18:30:00.000Z",
-      "id": 2
-    },
-    {
-      "productName": "ftty",
-      "category": "Vegetables",
-      "Quality": "Brand New",
-      "Price": 343,
-      "Comment": "5hfh",
-      "Date": "2023-07-12T18:30:00.000Z",
-      "id": 3
-    },
-    {
-      "productName": "banana",
-      "category": "Fruits",
-      "Quality": "Brand New",
-      "Price": 60,
-      "Comment": "fgf",
-      "Date": "2023-07-27T18:30:00.000Z",
-      "id": 4
-    },
-    {
       "productName": "dffdsf",
       "category": "Vegetables",
       "Quality": "Brand New",
@@ -37,15 +10,6 @@
       "id": 5
     },
     {
-      "productName": "almonds",
-      "category": "Fruits",
-      "Quality": "Brand New",
-      "Price": 500,
-      "Comment": "efrere",
-      "Date": "2023-07-19T18:30:00.000Z",
-      "id": 6
-    },
-    {
       "productName": "samsung",
       "category": "Electronics",
       "Quality": "Brand New",
@@ -53,6 +17,24 @@
       "Comment": "no",
       "Date": "2023-07-19T18:30:00.000Z",
       "id": 7
+    },
+    {
+      "productName": "watch",
+      "category": "Electronics",
+      "Quality": "Brand New",
+      "Price": 400,
+      "Comment": "blue color",
+      "Date": "2023-07-19T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "fgh",
+      "category": "Vegetables",
+      "Quality": "Brand New",
+      "Price": 2343,
+      "Comment": "dfd",
+      "Date": "2023-07-19T18:30:00.000Z",
+      "id": 9
     }
   ],
   "comments": [

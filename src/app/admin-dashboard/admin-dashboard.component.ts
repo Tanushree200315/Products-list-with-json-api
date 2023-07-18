@@ -31,6 +31,7 @@ export class AdminDashboardComponent implements OnInit{
     this.api.deleteProduct(id).subscribe({
       next:(res)=>{
         alert("Product deleted successfully");
+        this.getAllProducts();
       },
       error:()=>{alert("Error Occured");
 
