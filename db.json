@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "productName": "samsung",
-      "category": "Electronics",
-      "Quality": "Second Hand",
-      "Price": 1000,
-      "Comment": "no",
-      "Date": "2023-07-17T18:30:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "apple ",
       "category": "Fruits",
       "Quality": "Brand New",
@@ -20,7 +11,7 @@
     },
     {
       "productName": "ftty",
-      "category": "Fruits",
+      "category": "Vegetables",
       "Quality": "Brand New",
       "Price": 343,
       "Comment": "5hfh",
@@ -44,6 +35,24 @@
       "Comment": "fdfdfdfdf",
       "Date": "2023-07-17T18:30:00.000Z",
       "id": 5
+    },
+    {
+      "productName": "almonds",
+      "category": "Fruits",
+      "Quality": "Brand New",
+      "Price": 500,
+      "Comment": "efrere",
+      "Date": "2023-07-19T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "samsung",
+      "category": "Electronics",
+      "Quality": "Brand New",
+      "Price": 120,
+      "Comment": "no",
+      "Date": "2023-07-19T18:30:00.000Z",
+      "id": 7
     }
   ],
   "comments": [

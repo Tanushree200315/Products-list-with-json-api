@@ -33,13 +33,13 @@
           <mat-form-field appearance="fill">
             <mat-label>Comments</mat-label>
            <textarea formControlName="Comment" matInput ></textarea>
-    </mat-form-field>s
+    </mat-form-field>
     </form>
       
 </div>
 <div mat-dialog-actions [align]="'end'">
     <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
-    <button mat-raised-button color="primary" (click)="addProduct()" >Save</button>
+    <button mat-raised-button color="primary" (click)="addProduct()" >{{Actionbtn}}</button>
 
 
 </div>

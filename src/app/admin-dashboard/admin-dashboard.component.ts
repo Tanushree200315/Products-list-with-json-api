@@ -2,16 +2,17 @@ import { Component,OnInit,ViewChild} from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA, MatDialogModule} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { ApiService } from '../services/api.service';
-import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
-import {MatSort, MatSortModule} from '@angular/material/sort';
-import {MatTableDataSource, MatTableModule} from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort';
+import {MatTableDataSource} from '@angular/material/table';
+import { __values } from 'tslib';
 @Component({
   selector: 'app-admin-dashboard',
   templateUrl: './admin-dashboard.component.html',
   styleUrls: ['./admin-dashboard.component.scss']
 })
 export class AdminDashboardComponent implements OnInit{
-  displayedColumns: String[] = ['productName', 'category', 'Date','Quality', 'Price','Comment'];
+  displayedColumns: String[] = ['productName', 'Category', 'Date','Quality', 'Price','Comment','Actions'];
     dataSource!: MatTableDataSource<any>;
   
     @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -20,11 +21,28 @@ export class AdminDashboardComponent implements OnInit{
     
   
   }
+  editProduct(row :any){
+    this.dialog.open(DialogComponent, {
+      width:'30%',
+        data:row,
+    }).afterClosed().subscribe(val=>{this.getAllProducts()})
+  }
+  deleteProduct(id :number){
+    this.api.deleteProduct(id).subscribe({
+      next:(res)=>{
+        alert("Product deleted successfully");
+      },
+      error:()=>{alert("Error Occured");
+
+      }
+    }
+    )
+  }
   openDialog() {
     this.dialog.open(DialogComponent, {
       width:'30%',
   
-    });
+    }).afterClosed().subscribe(val=>{this.getAllProducts()})
   }
 ngOnInit(): void {
   this.getAllProducts();
